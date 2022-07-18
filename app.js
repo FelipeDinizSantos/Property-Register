@@ -58,5 +58,6 @@ class App {
         immobileTypeClear.value = document.querySelector('select option').value
         let rentedClear = document.querySelector('select[name="rented"]')
         rentedClear.value = document.querySelector('select[name="rented"] option').value
+        console.log('Clear Call')
     }
 }
