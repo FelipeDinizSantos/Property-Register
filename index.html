@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Cadastro de Imoveis
+    </title>
+    <style>
+        *{
+            font-family: arial;
+        }
+        span{
+            padding: 5px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            margin-bottom: 1em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Imóveis</h1>
+    <form>
+        <p>
+            <label for="area">Área:</label>
+            <input type="number" name="area" placeholder="40m²">
+        </p>
+        <p>
+            <label for="immobileType">Tipo do Imóvel:</label>
+            <select name="immobileType">
+                <option>Apartamento</option>
+                <option>Casa</option>
+            </select>
+        </p>
+        <p>
+            <label>Condição do Imóvel:</label>
+            <select name="rented" id="rented">
+                <option>Disponível</option>
+                <option>Alugado</option>
+            </select>
+        </p>
+        <p>
+            <button id="add" type="submit"> Adicionar Imóvel </button> 
+        </p>
+    </form>
+    <h1>Imóveis Cadastrados</h1>
+    <ul id="list-house"></ul>
+</body>
+<script src="index.js"></script>
+<script src="house.js"></script>
+<script src="app.js"></script>
+</html>
